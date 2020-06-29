@@ -201,7 +201,7 @@ def test_main():
     assert np.allclose(data_out['timestamps'], data_reg['timestamps'],
                        rtol=1e-05, atol=1e-05, equal_nan=False)
     assert np.allclose(data_out['embedding'], data_reg['embedding'],
-                       rtol=1e-03, atol=1e-03, equal_nan=False)
+                       rtol=1e-02, atol=1e-02, equal_nan=False)
 
 
 def test_script_main():
@@ -224,4 +224,4 @@ def test_script_main():
     assert np.allclose(data_out['timestamps'], data_reg['timestamps'],
                        rtol=1e-05, atol=1e-05, equal_nan=False)
     assert np.allclose(data_out['embedding'], data_reg['embedding'],
-                       rtol=1e-03, atol=1e-03, equal_nan=False)
+                       rtol=1e-02, atol=1e-02, equal_nan=False)
